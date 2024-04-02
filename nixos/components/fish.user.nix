@@ -11,7 +11,7 @@
     shellAliases = {
       update = ''
         alejandra ~/lausys &>/dev/null
-        sudo nixos-rebuild switch --flake ~/lausys#nixos'';
+        sudo nixos-rebuild switch --flake path:/home/laura/lausys#nixos'';
       c = "clear";
       n = "nvim .";
       cat = "bat";
