@@ -1,6 +1,5 @@
 local plugins = {
 	--theme
-	"Mofiqul/dracula.nvim",
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",

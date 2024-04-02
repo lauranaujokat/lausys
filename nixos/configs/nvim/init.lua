@@ -19,8 +19,7 @@ require("plugins")
 --		Loads settings native to Neovim
 require("setups/native")
 --		theme
--- require("setups/dracula")
-vim.cmd.colorscheme("catppuccin-macchiato")
+require("setups/catppuccin")
 
 --		File tree
 require("setups/neo-tree")
