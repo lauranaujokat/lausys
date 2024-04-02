@@ -135,7 +135,6 @@
     starship # pretty prompt
     wget #for getting stuff
     zoxide #fancy CD
-    discordo #discord in terminal
     lazygit
     ncdu
 
