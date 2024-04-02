@@ -26,7 +26,7 @@ in {
         foreground-alt = colors.text;
 
         primary = colors.blue;
-        secondary = colors.pink;
+        secondary = colors.crust;
         alert = colors.red;
 
         fonts = {
