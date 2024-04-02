@@ -6,6 +6,8 @@
       {id = "clngdbkpkpeebahjckkjfobafhncgmne";} # stylus
       {id = "mnjggcdmjocbbbhaepdhchncahnbgone";} # sponsorblock yt
       {id = "cmpdlhmnmjhihmcfnigoememnffkimlk";} # catppuccin theme chromium
+      {id = "oboonakemofpalcgghocfoadofidjkkk";} # keepassxc
+      {id = "nngceckbapebfimnlniiiahkandclblb";} # bitwarden
     ];
   };
 }
