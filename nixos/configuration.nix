@@ -162,6 +162,7 @@
 
     # normal programs
     firefox
+    revolt-desktop
 
     # rice
     picom # composer
