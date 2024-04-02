@@ -126,6 +126,7 @@
   nix.settings.auto-optimise-store = true;
 
   nixpkgs.config.allowUnfree = true;
+
   environment.systemPackages = with pkgs; [
     #terminal tools
     kitty #terminal
@@ -165,6 +166,7 @@
     revolt-desktop
     keepassxc
     signal-desktop
+    steam
 
     # rice
     picom # composer
