@@ -163,6 +163,7 @@
     # normal programs
     chromium
     revolt-desktop
+    keepassxc
 
     # rice
     picom # composer
