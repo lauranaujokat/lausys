@@ -163,6 +163,7 @@
     chromium
     revolt-desktop
     keepassxc
+    signal-desktop
 
     # rice
     picom # composer
