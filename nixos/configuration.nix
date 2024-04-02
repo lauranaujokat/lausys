@@ -161,7 +161,7 @@
     (callPackage ./packages/catppuccin-sddm.nix {}).catppuccin-sddm
 
     # normal programs
-    firefox
+    chromium
     revolt-desktop
 
     # rice

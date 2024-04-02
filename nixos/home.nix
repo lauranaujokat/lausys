@@ -10,7 +10,7 @@
     ./components/git.user.nix
     ./components/globals.user.nix
     ./components/btop.user.nix
-    ./components/firefox.user.nix
+    ./components/chromium.user.nix
     ./components/i3.user.nix
     ./components/kitty.user.nix
     ./components/nvim.user.nix
