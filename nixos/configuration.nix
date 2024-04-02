@@ -125,6 +125,7 @@
   # make it take up less space
   nix.settings.auto-optimise-store = true;
 
+  nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     #terminal tools
     kitty #terminal
