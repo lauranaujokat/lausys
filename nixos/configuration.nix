@@ -44,20 +44,24 @@
     rtkit.enable = true;
   };
 
-  boot.loader.grub = {
-    enable = true;
-    device = "/dev/sda";
-    useOSProber = true;
-    theme = pkgs.stdenv.mkDerivation {
-      pname = "catppuccin-macchiato-grub";
-      version = "1.0";
-      src = pkgs.fetchFromGitHub {
-        owner = "catppuccin";
-        repo = "grub";
-        rev = "88f6124";
-        hash = "sha256-e8XFWebd/GyX44WQI06Cx6sOduCZc5z7/YhweVQGMGY=";
+  boot.loader = {
+    efi = {canTouchEfiVariables = false;};
+    grub = {
+      efiSupport = true;
+      enable = true;
+      device = "nodev";
+      useOSProber = true;
+      theme = pkgs.stdenv.mkDerivation {
+        pname = "catppuccin-macchiato-grub";
+        version = "1.0";
+        src = pkgs.fetchFromGitHub {
+          owner = "catppuccin";
+          repo = "grub";
+          rev = "88f6124";
+          hash = "sha256-e8XFWebd/GyX44WQI06Cx6sOduCZc5z7/YhweVQGMGY=";
+        };
+        installPhase = "cp -r ./src/catppuccin-macchiato-grub-theme $out";
       };
-      installPhase = "cp -r ./src/catppuccin-macchiato-grub-theme $out";
     };
   };
 
