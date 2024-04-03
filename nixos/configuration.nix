@@ -79,13 +79,11 @@
   services = {
     xserver = {
       enable = true;
-      resolutions = [
-        {
-          x = 1920;
-          y = 1080;
-        }
-      ];
       displayManager = {
+        setupCommands = ''
+          ${pkgs.xorg.xrandr}/bin/xrandr --output HDMI-1-1 --primary --mode 2560x1080 --output eDP-1 --mode 1920x1080 --left-of HDMI-1-1
+
+        '';
         defaultSession = "none+i3";
         sddm = {
           enable = true;
