@@ -94,6 +94,12 @@ local plugins = {
 		run = ":Neorg sync-parsers",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
+
+  --lsp loading pretty stuff
+  "j-hui/fidget.nvim",
+
+  -- prettier windows
+  "stevearc/dressing.nvim",
 }
 
 require("lazy").setup({ plugins })
