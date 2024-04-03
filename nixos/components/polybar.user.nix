@@ -26,7 +26,7 @@ in {
         foreground-alt = colors.text;
 
         primary = colors.blue;
-        secondary = colors.crust;
+        secondary = colors.pink;
         alert = colors.red;
 
         fonts = {
@@ -75,7 +75,8 @@ in {
 
           # visible = "Active workspace on unfocused monitor";
           label-visible = "%{T2}%name%%{T-}";
-          label-visible-background = secondary;
+          label-visible-background = foreground;
+          label-visible-foreground = background;
           label-visible-padding = 2;
 
           # urgent = "Workspace with urgency hint set";
