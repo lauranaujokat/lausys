@@ -164,6 +164,7 @@
     revolt-desktop
     keepassxc
     signal-desktop
+    obsidian
 
     # rice
     picom # composer
