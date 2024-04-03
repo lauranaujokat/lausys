@@ -164,7 +164,6 @@
     revolt-desktop
     keepassxc
     signal-desktop
-    steam
 
     # rice
     picom # composer
