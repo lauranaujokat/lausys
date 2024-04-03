@@ -53,8 +53,6 @@ require("setups/gitsigns")
 require("setups/lsp/nvim-dap")
 --		flash, for moving better
 require("setups/flash")
---      org mode for Neovim
-require("setups/neorg")
 --      pretty stuff in the bottom right corner
 require("setups/lsp/fidget")
 --      make windows prettier
