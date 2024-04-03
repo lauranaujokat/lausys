@@ -165,6 +165,7 @@
     keepassxc
     signal-desktop
     obsidian
+    element
 
     # rice
     picom # composer
