@@ -76,7 +76,12 @@
   # Set your time zone.
 
   # Configure keymap in X11
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
   services = {
+    blueman.enable = true;
     xserver = {
       enable = true;
       displayManager = {
@@ -125,6 +130,7 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  programs.steam.enable = true;
   environment.systemPackages = with pkgs; [
     #terminal tools
     kitty #terminal
@@ -165,7 +171,7 @@
     keepassxc
     signal-desktop
     obsidian
-    element
+    element-desktop
 
     # rice
     picom # composer
@@ -178,6 +184,7 @@
     arandr # controlling display stuff
     flameshot # screenshots
     xclip # clipboard
+    brightnessctl
   ];
 
   system.stateVersion = "23.11";
