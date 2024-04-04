@@ -207,6 +207,7 @@
     signal-desktop
     obsidian
     element-desktop
+    atlauncher
 
     # rice
     picom # composer
