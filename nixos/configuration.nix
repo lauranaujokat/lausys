@@ -118,6 +118,7 @@
     };
   };
   services = {
+    gvfs.enable = true;
     blueman.enable = true;
     xserver = {
       enable = true;
@@ -209,6 +210,7 @@
     element-desktop
     prismlauncher
     obs-studio
+    cinnamon.nemo
 
     # rice
     picom # composer
