@@ -176,8 +176,8 @@
     starship # pretty prompt
     wget #for getting stuff
     zoxide #fancy CD
-    lazygit
-    ncdu
+    lazygit #fancy git
+    ncdu # space usage shower
 
     #programming stuff
     neovim #text editor/ide
@@ -207,7 +207,8 @@
     signal-desktop
     obsidian
     element-desktop
-    atlauncher
+    prismlauncher
+    obs-studio
 
     # rice
     picom # composer
@@ -221,6 +222,9 @@
     flameshot # screenshots
     xclip # clipboard
     brightnessctl
+
+    # system
+    jdk17
   ];
 
   system.stateVersion = "23.11";
