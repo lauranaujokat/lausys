@@ -181,8 +181,9 @@
     zoxide #fancy CD
     lazygit #fancy git
     ncdu # space usage shower
-    zip
-    unzip
+    zip # for zipping stuff
+    unzip # for unzipping stuff
+    mullvad # vpn
 
     #programming stuff
     neovim #text editor/ide
@@ -201,20 +202,20 @@
     alejandra # nix
 
     #catppuccin stuff
-    catppuccin-cursors.macchiatoBlue
-    catppuccin-gtk
-    (callPackage ./packages/catppuccin-sddm.nix {}).catppuccin-sddm
+    catppuccin-cursors.macchiatoBlue # cursors from catppuccin
+    catppuccin-gtk # gtk stuff from catppuccin
+    (callPackage ./packages/catppuccin-sddm.nix {}).catppuccin-sddm # sddm theme from catppuccin
 
     # normal programs
-    chromium
-    revolt-desktop
-    keepassxc
-    signal-desktop
-    obsidian
-    element-desktop
-    prismlauncher
-    obs-studio
-    cinnamon.nemo
+    chromium # browser
+    revolt-desktop # discord but better
+    keepassxc # password manager
+    signal-desktop # whatsapp but better
+    obsidian # note taking app
+    element-desktop # messaging app
+    prismlauncher # minecraft launcher
+    obs-studio # screen recorder
+    cinnamon.nemo # file manager
 
     # rice
     picom # composer
@@ -227,10 +228,10 @@
     arandr # controlling display stuff
     flameshot # screenshots
     xclip # clipboard
-    brightnessctl
+    brightnessctl # control brightness
 
     # system
-    jdk17
+    jdk17 # java 17 for minecraft
   ];
 
   system.stateVersion = "23.11";
