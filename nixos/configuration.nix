@@ -122,17 +122,16 @@
   services = {
     gvfs.enable = true;
     blueman.enable = true;
+    displayManager = {
+      defaultSession = "none+i3";
+      sddm = {
+        enable = true;
+        theme = "catppuccin-macchiato";
+      };
+    };
     xserver = {
       enable = true;
       videoDrivers = ["nvidia"];
-      displayManager = {
-        setupCommands = "";
-        defaultSession = "none+i3";
-        sddm = {
-          enable = true;
-          theme = "catppuccin-macchiato";
-        };
-      };
       windowManager.i3 = {
         enable = true;
         package = pkgs.i3-gaps;
@@ -183,7 +182,6 @@
     ncdu # space usage shower
     zip # for zipping stuff
     unzip # for unzipping stuff
-    mullvad # vpn
 
     #programming stuff
     neovim #text editor/ide
@@ -216,6 +214,7 @@
     prismlauncher # minecraft launcher
     obs-studio # screen recorder
     cinnamon.nemo # file manager
+    vlc # for watching videos
 
     # rice
     picom # composer
