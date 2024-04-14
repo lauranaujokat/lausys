@@ -182,6 +182,8 @@
     ncdu # space usage shower
     zip # for zipping stuff
     unzip # for unzipping stuff
+    brightnessctl # control brightness
+    ani-cli #
 
     #programming stuff
     neovim #text editor/ide
@@ -227,7 +229,6 @@
     arandr # controlling display stuff
     flameshot # screenshots
     xclip # clipboard
-    brightnessctl # control brightness
 
     # system
     jdk17 # java 17 for minecraft
