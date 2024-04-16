@@ -184,6 +184,9 @@
     unzip # for unzipping stuff
     brightnessctl # control brightness
     ani-cli #
+    xmrig
+    p2pool
+    xorg.xev
 
     #programming stuff
     neovim #text editor/ide
@@ -208,6 +211,7 @@
 
     # normal programs
     chromium # browser
+    mullvad-browser # browser
     revolt-desktop # discord but better
     keepassxc # password manager
     signal-desktop # whatsapp but better
@@ -217,6 +221,7 @@
     obs-studio # screen recorder
     cinnamon.nemo # file manager
     vlc # for watching videos
+    monero-gui
 
     # rice
     picom # composer
@@ -228,10 +233,11 @@
     pavucontrol # controlling audio
     arandr # controlling display stuff
     flameshot # screenshots
-    xclip # clipboard
 
     # system
     jdk17 # java 17 for minecraft
+    monero
+    xclip # clipboard
   ];
 
   system.stateVersion = "23.11";
