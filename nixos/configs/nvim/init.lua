@@ -57,6 +57,8 @@ require("setups/flash")
 require("setups/lsp/fidget")
 --      make windows prettier
 require("setups/dressing")
+--      startup screen
+require("setups/startup")
 
 --Load keybinds
 

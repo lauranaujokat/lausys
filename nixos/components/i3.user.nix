@@ -87,6 +87,7 @@ in {
         # media-keys
         "XF86AudioRaiseVolume" = "exec --no-startup-id pamixer -i 1";
         "XF86AudioLowerVolume" = "exec --no-startup-id pamixer -d 1";
+        "XF86AudioPlay" = "exec playerctl play-pause";
 
         "XF86AudioMute" = "exec --no-startup-id pamixer -t";
         "XF86AudioMicMute" = "exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle";

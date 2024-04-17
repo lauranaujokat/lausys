@@ -93,6 +93,9 @@ local plugins = {
 
   -- prettier windows
   "stevearc/dressing.nvim",
+
+  -- pretty startup
+  "startup-nvim/startup.nvim"
 }
 
 require("lazy").setup({ plugins })

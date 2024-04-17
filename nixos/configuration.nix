@@ -186,7 +186,7 @@
     ani-cli #
     xmrig
     p2pool
-    xorg.xev
+    playerctl
 
     #programming stuff
     neovim #text editor/ide
