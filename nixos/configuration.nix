@@ -184,9 +184,7 @@
     unzip # for unzipping stuff
     brightnessctl # control brightness
     ani-cli #
-    xmrig
-    p2pool
-    playerctl
+    playerctl # control video
 
     #programming stuff
     neovim #text editor/ide
@@ -236,7 +234,6 @@
 
     # system
     jdk17 # java 17 for minecraft
-    monero
     xclip # clipboard
   ];
 
