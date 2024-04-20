@@ -120,6 +120,7 @@
     };
   };
   services = {
+    mullvad-vpn.enable = true;
     gvfs.enable = true;
     blueman.enable = true;
     displayManager = {
@@ -209,7 +210,6 @@
 
     # normal programs
     chromium # browser
-    mullvad-browser # browser
     revolt-desktop # discord but better
     keepassxc # password manager
     signal-desktop # whatsapp but better
@@ -220,6 +220,7 @@
     cinnamon.nemo # file manager
     vlc # for watching videos
     monero-gui
+    mullvad-vpn
 
     # rice
     picom # composer
@@ -235,6 +236,7 @@
     # system
     jdk17 # java 17 for minecraft
     xclip # clipboard
+    openvpn
   ];
 
   system.stateVersion = "23.11";
