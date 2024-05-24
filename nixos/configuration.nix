@@ -132,7 +132,7 @@
     };
     xserver = {
       enable = true;
-      videoDrivers = ["nvidia"];
+      #videoDrivers = ["nvidia"];
       windowManager.i3 = {
         enable = true;
         package = pkgs.i3-gaps;
@@ -186,6 +186,7 @@
     brightnessctl # control brightness
     ani-cli #
     playerctl # control video
+    neofetch # to brag with my rice
 
     #programming stuff
     neovim #text editor/ide
@@ -198,6 +199,7 @@
     clang-tools # c stuff
     lua-language-server # lua
     nil # nix
+    openscad-lsp # lsp for cad
 
     # formatters
     stylua # lua
@@ -221,6 +223,9 @@
     vlc # for watching videos
     monero-gui
     mullvad-vpn
+    prusa-slicer # slicer
+    cura # slicer
+    discord
 
     # rice
     picom # composer
@@ -232,11 +237,15 @@
     pavucontrol # controlling audio
     arandr # controlling display stuff
     flameshot # screenshots
+    xclicker # autoclicker
+    freecad # cad
+    openscad # cad
+    qpwgraph # sound config
 
     # system
-    jdk17 # java 17 for minecraft
+    jdk17 # java 21 for minecraft
+    jdk8 # java 8 for minecraft
     xclip # clipboard
-    openvpn
   ];
 
   system.stateVersion = "23.11";

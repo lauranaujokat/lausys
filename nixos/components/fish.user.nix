@@ -16,6 +16,7 @@
       n = "nvim .";
       cat = "bat";
       y = "yazi";
+      ls = "exa -1la";
     };
     shellInit = ''
       set -U fish_greeting

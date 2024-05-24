@@ -12,6 +12,10 @@ return {
 			},
 		},
 	},
+  openscad_lsp = {
+    cmd = {"/run/current-system/sw/bin/openscad-lsp"};
+    filetypes = {"openscad", "scad"};
+  };
 	rust_analyzer = {
 		cmd = { "/run/current-system/sw/bin/rust-analyzer" },
 		settings = {
