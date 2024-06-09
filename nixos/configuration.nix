@@ -132,7 +132,7 @@
     };
     xserver = {
       enable = true;
-      #videoDrivers = ["nvidia"];
+      videoDrivers = ["nvidia"];
       windowManager.i3 = {
         enable = true;
         package = pkgs.i3-gaps;
@@ -187,6 +187,7 @@
     ani-cli #
     playerctl # control video
     neofetch # to brag with my rice
+    spicetify-cli
 
     #programming stuff
     neovim #text editor/ide
@@ -212,6 +213,7 @@
 
     # normal programs
     chromium # browser
+    firefox # browser
     revolt-desktop # discord but better
     keepassxc # password manager
     signal-desktop # whatsapp but better
@@ -225,7 +227,8 @@
     mullvad-vpn
     prusa-slicer # slicer
     cura # slicer
-    discord
+    discord # discord
+    spotify
 
     # rice
     picom # composer
