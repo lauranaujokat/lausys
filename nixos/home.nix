@@ -3,6 +3,7 @@
   pkgs,
   home,
   lib,
+  inputs, # added for spicetify
   ...
 }: {
   imports = [
@@ -20,6 +21,8 @@
     ./components/rofi.user.nix
     ./components/polybar.user.nix
     ./components/gtk.user.nix
+    inputs.spicetify-nix.homeManagerModules.default # added for spicetify
+    ./components/spicetify.user.nix
   ];
   home.username = "laura";
   home.homeDirectory = "/home/laura";
