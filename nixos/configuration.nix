@@ -204,6 +204,7 @@
     lua-language-server # lua
     nil # nix
     openscad-lsp # lsp for cad
+    nodePackages.typescript-language-server
 
     # formatters
     stylua # lua
@@ -231,6 +232,7 @@
     prusa-slicer # slicer
     cura # slicer
     discord # discord
+    gimp
 
     # rice
     picom # composer
