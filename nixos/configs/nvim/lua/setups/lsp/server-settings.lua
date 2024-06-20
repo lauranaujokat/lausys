@@ -44,7 +44,7 @@ return {
     },
   },
   tsserver = {
-    cmd = { "/run/current-system/sw/bin/typescript-language-server" },
+    cmd = { "/run/current-system/sw/bin/typescript-language-server", "--stdio" },
     filetypes = { "javascript", "typescript" },
   },
   nil_ls = {
