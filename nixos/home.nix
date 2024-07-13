@@ -23,6 +23,7 @@
     ./components/gtk.user.nix
     inputs.spicetify-nix.homeManagerModules.default # added for spicetify
     ./components/spicetify.user.nix
+    ./components/mpv.user.nix
   ];
   home.username = "laura";
   home.homeDirectory = "/home/laura";
@@ -38,12 +39,24 @@
   };
   home.file = {};
   home.stateVersion = "23.11";
-  home.pointerCursor = {
-    gtk.enable = true;
-    x11.enable = true;
-    package = pkgs.catppuccin-cursors.macchiatoBlue;
-    name = "Catppuccin-Macchiato-Blue-Cursors";
-    size = 40;
-  };
   programs.home-manager.enable = true;
+  home.pointerCursor = let
+    getFrom = url: hash: name: {
+      gtk.enable = true;
+      x11.enable = true;
+      name = name;
+      size = 24;
+      package = pkgs.runCommand "moveUp" {} ''
+        mkdir -p $out/share/icons
+        ln -s ${pkgs.fetchzip {
+          url = url;
+          hash = hash;
+        }} $out/share/icons/${name}
+      '';
+    };
+  in
+    getFrom
+    "https://github.com/catppuccin/cursors/releases/download/v0.3.1/catppuccin-macchiato-blue-cursors.zip"
+    "sha256-oRHq/z/Jn7jLWH2QXHoHg1XssfHimGvtVr9AB8wRMr0="
+    "macchiato-blue";
 }
