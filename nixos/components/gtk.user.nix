@@ -1,18 +1,18 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
+  imports = [inputs.catppuccin.homeManagerModules.catppuccin];
   gtk = {
     enable = true;
-    theme = {
-      name = "Catppuccin-Macchiato-Standard-Blue-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        accents = ["blue"];
-        size = "standard";
-        tweaks = ["rimless"];
-        variant = "macchiato";
-      };
+    catppuccin = {
+      enable = true;
+      flavor = "macchiato";
+      accent = "blue";
+      size = "standard";
+      tweaks = ["rimless"];
     };
   };
   xdg.configFile = {

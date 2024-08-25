@@ -14,8 +14,8 @@
     inputs.home-manager.nixosModules.home-manager
   ];
   nix.settings.experimental-features = ["nix-command" "flakes"];
-  nix.settings.trusted-substituters = ["https://ai.cachix.org"];
-  nix.settings.trusted-public-keys = ["ai.cachix.org-1:N9dzRK+alWwoKXQlnn0H6aUx0lU/mspIoz8hMvGvbbc="];
+  nix.settings.trusted-substituters = ["https://ai.cachix.org" "https://nix-gaming.cachix.org"];
+  nix.settings.trusted-public-keys = ["ai.cachix.org-1:N9dzRK+alWwoKXQlnn0H6aUx0lU/mspIoz8hMvGvbbc=" "nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="];
   home-manager = {
     useGlobalPkgs = true;
     extraSpecialArgs = {inherit inputs;};
@@ -81,6 +81,7 @@
 
   # Configure keymap in X11
   hardware = {
+    opentabletdriver.enable = true;
     nvidia = {
       # Modesetting is required.
       modesetting.enable = true;
@@ -111,11 +112,7 @@
       # Optionally, you may need to select the appropriate driver version for your specific GPU.
       package = config.boot.kernelPackages.nvidiaPackages.stable;
     };
-    opengl = {
-      enable = true;
-      driSupport = true;
-      driSupport32Bit = true;
-    };
+    graphics.enable = true;
     bluetooth = {
       enable = true;
       powerOnBoot = true;
@@ -176,7 +173,24 @@
   programs.steam.enable = true;
 
   environment.systemPackages = with pkgs; [
+    (pkgs.kicad.overrideAttrs (oldAttrs: {
+      postInstall = ''
+        ${oldAttrs.postInstall or ""}
+        wrapProgram $out/bin/kicad \
+          --set GTK_THEME Adwaita
+      '';
+    }))
     #terminal tools
+    jftui # tui for jellyfin
+    openai-whisper # audio to text ai
+    yt-dlp # yt video downloader
+    calcurse # calendar
+    dust # disk analysis
+    powertop # power analysis
+    atuin # shell history
+    fzf # fuzzy finder
+    fd # find
+    ffmpeg # for video stuff
     kitty #terminal
     fish #shell
     eza #ls but cool
@@ -191,9 +205,10 @@
     unzip # for unzipping stuff
     brightnessctl # control brightness
     playerctl # control video
-    neofetch # to brag with my rice
+    fastfetch # to brag with my rice
     libwebp
     parallel
+    toot # mastodon
 
     #programming stuff
     neovim #text editor/ide
@@ -215,37 +230,40 @@
 
     #catppuccin stuff
     catppuccin-cursors.macchiatoBlue # cursors from catppuccin
-    catppuccin-gtk # gtk stuff from catppuccin
+    catppuccin-gtk
+    catppuccin
     (callPackage ./packages/catppuccin-sddm.nix {}).catppuccin-sddm # sddm theme from catppuccin
 
     # normal programs
+    autokey
+    librecad # cad
+    monero-gui # monero
+    electrum # bitcoin wallet
+    syncthing # for syncing things
+    kicad # pcb design
+    krita # drawing
     chromium # browser
     firefox # browser
     revolt-desktop # discord but better
     keepassxc # password manager
     signal-desktop # whatsapp but better
     obsidian # note taking app
-    element-desktop # messaging app
     prismlauncher # minecraft launcher
     obs-studio # screen recorder
-    cinnamon.nemo # file manager
+    nemo # file manager
     vlc # for watching videos
-    monero-gui
     prusa-slicer # slicer
-    cura # slicer
-    iamb # matrix client
     gimp
-    vesktop
-    osu-lazer-bin
-
+    vesktop # discord but better
     mullvad-vpn
-    ani-cli #
-    anime4k
+    ani-cli # for watching anime
+    anime4k # for upscaling anime
+    osu-lazer-bin # osu
+    # inputs.nix-gaming.packages.${pkgs.system}.osu-stable # osu stable (bad)
 
     # rice
     picom # composer
     polybar # pretty bar on top
-    conky #status stuff in background
     rofi # dmenu
 
     # tools
@@ -253,8 +271,6 @@
     arandr # controlling display stuff
     flameshot # screenshots
     xclicker # autoclicker
-    freecad # cad
-    openscad # cad
     qpwgraph # sound config
     libreoffice
 

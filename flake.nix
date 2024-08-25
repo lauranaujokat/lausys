@@ -2,6 +2,8 @@
   description = "A very basic flake";
 
   inputs = {
+    catppuccin.url = "github:catppuccin/nix";
+    nix-gaming.url = "github:fufexan/nix-gaming";
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
