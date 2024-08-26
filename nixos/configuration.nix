@@ -259,7 +259,6 @@
     ani-cli # for watching anime
     anime4k # for upscaling anime
     osu-lazer-bin # osu
-    # inputs.nix-gaming.packages.${pkgs.system}.osu-stable # osu stable (bad)
 
     # rice
     picom # composer
