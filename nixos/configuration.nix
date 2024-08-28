@@ -235,6 +235,8 @@
     (callPackage ./packages/catppuccin-sddm.nix {}).catppuccin-sddm # sddm theme from catppuccin
 
     # normal programs
+    cmus # terminal music player
+    nicotine-plus # music
     autokey
     librecad # cad
     monero-gui # monero
