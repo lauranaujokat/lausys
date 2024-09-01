@@ -17,6 +17,8 @@
       cat = "bat";
       y = "yazi";
       ls = "exa -1la";
+      rm = "echo 'u cant behave so u dont get rm'";
+      remove = "command rm -irv";
     };
     shellInit = ''
       set -U fish_greeting
