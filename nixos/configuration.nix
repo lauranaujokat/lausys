@@ -130,6 +130,7 @@
       };
     };
     xserver = {
+      layout = "de";
       enable = true;
       videoDrivers = ["nvidia"];
       windowManager.i3 = {
