@@ -131,7 +131,7 @@ local FileIcon = {
 		local filename = self.filename
 		local extension = vim.fn.fnamemodify(filename, ":e")
 		self.icon, self.icon_color =
-			require("nvim-web-devicons").get_icon_color(filename, extension, { default = true })
+				require("nvim-web-devicons").get_icon_color(filename, extension, { default = true })
 	end,
 	provider = function(self)
 		return self.icon and (self.icon .. " ")
@@ -196,8 +196,8 @@ FileNameBlock = utils.insert(
 	FileNameBlock,
 	FileIcon,
 	utils.insert(FileNameModifer, FileName), -- a new table where FileName is a child of FileNameModifier
-	unpack(FileFlags), -- A small optimisation, since their parent does nothing
-	{ provider = "%<" } -- this means that the statusline is cut here when there's not enough space
+	unpack(FileFlags),                      -- A small optimisation, since their parent does nothing
+	{ provider = "%<" }                     -- this means that the statusline is cut here when there's not enough space
 )
 -- We're getting minimalists here!
 local Ruler = {

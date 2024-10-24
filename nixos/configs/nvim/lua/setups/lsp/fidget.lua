@@ -1,8 +1,8 @@
 require("fidget").setup({
-  notification = {
-    window = {
-      winblend = 0,
-      border = "rounded",
-    }
-  }
+	notification = {
+		window = {
+			winblend = 0,
+			border = "rounded",
+		}
+	}
 })

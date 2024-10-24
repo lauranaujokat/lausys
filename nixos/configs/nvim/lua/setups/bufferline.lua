@@ -3,10 +3,10 @@ require("bufferline").setup({
 		mode = "buffers", -- set to "tabs" to only show tabpages instead
 		-- numbers = "none" | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
 		numbers = "none",
-		close_command = "bdelete! %d", -- can be a string | function, see "Mouse actions"
+		close_command = "bdelete! %d",     -- can be a string | function, see "Mouse actions"
 		right_mouse_command = "bdelete! %d", -- can be a string | function, see "Mouse actions"
-		left_mouse_command = "buffer %d", -- can be a string | function, see "Mouse actions"
-		middle_mouse_command = nil, -- can be a string | function, see "Mouse actions"
+		left_mouse_command = "buffer %d",  -- can be a string | function, see "Mouse actions"
+		middle_mouse_command = nil,        -- can be a string | function, see "Mouse actions"
 		indicator = {
 			-- icon = '▎', -- this should be omitted if indicator style is not 'icon'
 			-- style = 'icon' | 'underline' | 'none',
@@ -69,7 +69,7 @@ require("bufferline").setup({
 				separator = true,
 			},
 		},
-		color_icons = true, -- whether or not to add the filetype icon highlights
+		color_icons = true,     -- whether or not to add the filetype icon highlights
 		show_buffer_icons = true, -- disable filetype icons for buffers
 		show_buffer_close_icons = false,
 

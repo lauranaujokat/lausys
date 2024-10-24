@@ -1,0 +1,39 @@
+
+2024/09/29 (20:49:06) | ===> btop++ v.1.3.2
+2024/09/29 (20:49:06) | ERROR: Couldn't determine terminal size of "STDOUT_FILENO"!
+2024/09/29 (20:49:06) | ERROR: Couldn't determine terminal size of "/dev/tty"!
+
+2024/10/04 (22:12:27) | ===> btop++ v.1.3.2
+2024/10/04 (22:12:27) | ERROR: Exception during Config::unlock() : unordered_map::at
+
+2024/10/05 (15:19:16) | ===> btop++ v.1.4.0
+2024/10/05 (15:19:16) | WARNING: Intel GPU: Failed to initialize PMU
+
+2024/10/07 (16:39:22) | ===> btop++ v.1.4.0
+2024/10/07 (16:39:22) | WARNING: Intel GPU: Failed to initialize PMU
+
+2024/10/09 (21:55:07) | ===> btop++ v.1.4.0
+2024/10/09 (21:55:07) | WARNING: Intel GPU: Failed to initialize PMU
+
+2024/10/10 (19:42:05) | ===> btop++ v.1.4.0
+2024/10/10 (19:42:05) | WARNING: Intel GPU: Failed to initialize PMU
+
+2024/10/13 (22:43:30) | ===> btop++ v.1.4.0
+2024/10/13 (22:43:30) | WARNING: Intel GPU: Failed to initialize PMU
+2024/10/13 (22:43:37) | ERROR: Couldn't determine terminal size of "STDOUT_FILENO"!
+2024/10/13 (22:43:37) | ERROR: Couldn't determine terminal size of "/dev/tty"!
+
+2024/10/18 (03:12:28) | ===> btop++ v.1.4.0
+2024/10/18 (03:12:28) | WARNING: Intel GPU: Failed to initialize PMU
+
+2024/10/23 (16:29:03) | ===> btop++ v.1.4.0
+2024/10/23 (16:29:03) | WARNING: Intel GPU: Failed to initialize PMU
+
+2024/10/23 (16:29:22) | ===> btop++ v.1.4.0
+2024/10/23 (16:29:22) | WARNING: Intel GPU: Failed to initialize PMU
+
+2024/10/24 (14:14:39) | ===> btop++ v.1.4.0
+2024/10/24 (14:14:39) | WARNING: Intel GPU: Failed to initialize PMU
+
+2024/10/24 (16:43:56) | ===> btop++ v.1.4.0
+2024/10/24 (16:43:56) | WARNING: Intel GPU: Failed to initialize PMU

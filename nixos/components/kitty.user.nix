@@ -6,11 +6,10 @@
   programs.kitty = {
     enable = true;
 
-    theme = "Catppuccin-Macchiato";
+    themeFile = "Catppuccin-Macchiato";
 
     font = {
-      package = pkgs.fira-code;
-      name = "FiraCode Nerd Font";
+      name = "Lilex Nerd Font";
       size = 15;
     };
 
@@ -24,7 +23,7 @@
 
       enable_audio_bell = "no";
 
-      background_opacity = "0.85";
+      background_opacity = "1";
 
       confirm_os_window_close = "0";
     };

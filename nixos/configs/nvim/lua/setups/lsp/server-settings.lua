@@ -1,60 +1,33 @@
 return {
-  lua_ls = {
-    cmd = { "/run/current-system/sw/bin/lua-language-server" },
-    settings = {
-      Lua = {
-        diagnostics = {
-          globals = { "vim" },
-        },
-        format = {
-          command = { "stylua" },
-        },
-      },
-    },
-  },
-  openscad_lsp = {
-    cmd = { "/run/current-system/sw/bin/openscad-lsp" },
-    filetypes = { "openscad", "scad" },
-  },
-  rust_analyzer = {
-    cmd = { "/run/current-system/sw/bin/rust-analyzer" },
-    settings = {
-      ["rust-analyzer"] = {
-        procMacro = {
-          enable = false,
-        },
-        cachePriming = {
-          numThreads = 4,
-        },
-        diagnostics = {
-          experimental = {
-            enable = true,
-          },
-          disabled = {
-            "unresolved-proc-macro",
-          },
-        },
-        checkOnSave = {
-          command = "clippy",
-        },
-        cargo = {
-          target = "x86_64-unknown-linux-gnu",
-        },
-      },
-    },
-  },
-  tsserver = {
-    cmd = { "/run/current-system/sw/bin/typescript-language-server", "--stdio" },
-    filetypes = { "javascript", "typescript" },
-  },
-  nil_ls = {
-    cmd = { "/run/current-system/sw/bin/nil" },
-    settings = {
-      ["nil"] = {
-        formatting = {
-          command = { "alejandra" },
-        },
-      },
-    },
-  },
+	lua_ls = {
+		cmd = { "/run/current-system/sw/bin/lua-language-server" },
+		settings = {
+			Lua = {
+				diagnostics = {
+					globals = { "vim" },
+				},
+				format = {
+					command = { "stylua" },
+				},
+			},
+		},
+	},
+	openscad_lsp = {
+		cmd = { "/run/current-system/sw/bin/openscad-lsp" },
+		filetypes = { "openscad", "scad" },
+	},
+	ts_ls = {
+		cmd = { "/run/current-system/sw/bin/typescript-language-server", "--stdio" },
+		filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
+	},
+	nil_ls = {
+		cmd = { "/run/current-system/sw/bin/nil" },
+		settings = {
+			["nil"] = {
+				formatting = {
+					command = { "alejandra" },
+				},
+			},
+		},
+	},
 }

@@ -37,7 +37,7 @@ in {
       modifier = mod;
 
       fonts = {
-        names = ["FiraCode Nerd"];
+        names = ["Lilex Nerd Font"];
       };
 
       gaps = {

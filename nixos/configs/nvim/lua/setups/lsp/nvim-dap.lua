@@ -1,6 +1,3 @@
-require("neodev").setup({
-	library = { plugins = { "nvim-dap-ui" }, types = true },
-})
 require("dapui").setup({
 	controls = {
 		element = "repl",
@@ -20,7 +17,7 @@ require("dapui").setup({
 	element_mappings = {},
 	expand_lines = true,
 	floating = {
-		border = "single",
+		border = "rounded",
 		mappings = {
 			close = { "q", "<Esc>" },
 		},
@@ -43,14 +40,6 @@ require("dapui").setup({
 			position = "left",
 			size = 40,
 		},
-		{
-			elements = { {
-				id = "repl",
-				size = 1,
-			} },
-			position = "bottom",
-			size = 10,
-		},
 	},
 	mappings = {
 		edit = "e",
@@ -66,6 +55,11 @@ require("dapui").setup({
 	},
 })
 local dap, dapui = require("dap"), require("dapui")
+dap.adapters.lldb = {
+	type = 'executable',
+	command = '/run/current-system/sw/bin/lldb-dap',
+	name = 'lldb'
+}
 
 dap.listeners.after.event_initialized["dapui_config"] = function()
 	dapui.open()

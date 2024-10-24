@@ -130,7 +130,7 @@
       };
     };
     xserver = {
-      layout = "de";
+      xkb.layout = "us";
       enable = true;
       videoDrivers = ["nvidia"];
       windowManager.i3 = {
@@ -148,7 +148,9 @@
   };
 
   fonts.packages = with pkgs; [
-    (nerdfonts.override {fonts = ["FiraCode"];})
+    # _0xproto
+    (callPackage ./packages/my0xproto.nix {}).my0xproto # patched 0xproto
+    (callPackage ./packages/mylilex.nix {}).mylilex # patched 0xproto
   ];
 
   programs.fish.enable = true;
@@ -182,6 +184,7 @@
       '';
     }))
     #terminal tools
+    cmus # terminal music player
     jftui # tui for jellyfin
     openai-whisper # audio to text ai
     yt-dlp # yt video downloader
@@ -212,10 +215,11 @@
     toot # mastodon
 
     #programming stuff
+    lldb
+    aoc-cli
+    ghidra # decompiling
     neovim #text editor/ide
-    cargo #rust tooling
     git #git
-    gcc #gcc compiler
 
     # language server
     rust-analyzer # rust
@@ -236,7 +240,9 @@
     (callPackage ./packages/catppuccin-sddm.nix {}).catppuccin-sddm # sddm theme from catppuccin
 
     # normal programs
-    cmus # terminal music player
+    gnome-font-viewer # for viewing fonts
+    mullvad-browser
+    tor-browser
     nicotine-plus # music
     autokey
     librecad # cad
@@ -281,6 +287,8 @@
     jdk17 # java 17 for minecraft
     jdk8 # java 8 for minecraft
     xclip # clipboard
+    gcc # c compiler cause some things need that
+    (callPackage ./packages/my0xproto.nix {}).my0xproto # patched 0xproto
 
     # wine stuff (for gayming)
     winetricks

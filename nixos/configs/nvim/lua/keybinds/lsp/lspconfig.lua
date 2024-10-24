@@ -9,4 +9,4 @@ local function toggle_diagnostics()
 end
 
 map("n", "<leader>lv", vim.lsp.buf.format)
-map("n", "<leader>lt", toggle_diagnostics)
+map("n", "<leader>ld", toggle_diagnostics)

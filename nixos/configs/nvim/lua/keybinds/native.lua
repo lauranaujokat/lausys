@@ -1,6 +1,6 @@
 --Different ways to quickly quit neovim
 local map = vim.keymap.set
-map("n", "<leader>q", "<cmd>q!<cr><cmd>q!<cr>")
+map("n", "<leader>q", "<cmd>q!<cr><cmd>q!<cr><cmd>q!<cr><cmd>q!<cr>")
 map("n", "<leader>w", "<cmd>w!<cr>")
 map("n", "<leader>x", "<cmd>x!<cr>")
 

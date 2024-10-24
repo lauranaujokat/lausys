@@ -1,5 +1,5 @@
 local map = vim.keymap.set
-map("n", "<C-space>", "<cmd>Lspsaga hover_doc<cr>", { noremap = false })
+map("n", "<A-space>", "<cmd>Lspsaga hover_doc<cr>", { noremap = false })
 map("n", "<leader>le", "<cmd>Lspsaga peek_definition<cr>")
 map("n", "<leader>la", "<cmd>Lspsaga code_action<cr>")
 map("n", "<leader>lr", "<cmd>Lspsaga rename<cr>")

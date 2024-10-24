@@ -30,9 +30,9 @@ in {
         alert = colors.red;
 
         fonts = {
-          font-0 = "FiraCode Nerd Font Mono:pixelsize=13;4";
-          font-1 = "FiraCode Nerd Font Mono:size=24;7";
-          font-2 = "FiraCode Nerd Font Mono:size=22;7";
+          font-0 = "Lilex Nerd Font Mono:pixelsize=13;4";
+          font-1 = "Lilex Nerd Font Mono:size=24;7";
+          font-2 = "Lilex Nerd Font Mono:size=22;7";
         };
       in {
         "bar/main" =

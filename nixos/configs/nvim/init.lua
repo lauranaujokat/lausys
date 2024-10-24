@@ -45,8 +45,8 @@ require("setups/lsp/lspkind")
 require("setups/bufferline")
 --		heirline, for the true heir
 require("setups/heirline")
---		symbol outline, for going places
-require("setups/lsp/symbols-outline")
+--		outline, for going places
+require("setups/lsp/outline")
 --		git stuff for heirline
 require("setups/gitsigns")
 --		nvim dap
@@ -59,6 +59,14 @@ require("setups/lsp/fidget")
 require("setups/dressing")
 --      startup screen
 require("setups/startup")
+--      org mode in neovim
+require("setups/neorg")
+--      images in neovim
+require("setups/image")
+--      rust crate management in neovim
+require("setups/crates")
+--		pertty lsp signature
+require("setups/lsp/lsp_signature")
 
 --Load keybinds
 
@@ -74,9 +82,13 @@ require("keybinds/lsp/lspconfig")
 require("keybinds/lsp/lspsaga")
 --		bufferline keybinds
 require("keybinds/bufferline")
---		symbols outline keybinds
-require("keybinds/lsp/symbols-outline")
+--		outline keybinds
+require("keybinds/lsp/outline")
 --		flash, for moving around faster
 require("keybinds/flash")
 --		dap, for debugging
 require("keybinds/lsp/nvim-dap")
+--    neorg, org mode in neovim
+require("keybinds/neorg")
+--    managing rust crates
+require("keybinds/crates")

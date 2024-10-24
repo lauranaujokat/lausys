@@ -8,10 +8,11 @@ local source_mapping = {
 	path = "[Path]",
 	vsnip = "[vsnip]",
 	cmdline = "[cmdline]",
+	crates = "[crates]"
 }
 
 local border_opts =
-	{ border = "single", winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None" }
+{ border = "rounded", winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None" }
 cmp.setup({
 	formatting = {
 		fields = { "kind", "abbr", "menu" },
@@ -46,12 +47,16 @@ cmp.setup({
 		vsnip = 850,
 		path = 750,
 		buffer = 500,
+		neorg = 1500,
+		crates = 2000
 	},
 	sources = cmp.config.sources({
+		{ name = "neorg" },
 		{ name = "nvim_lsp" },
 		{ name = "vsnip" },
 		{ name = "path" },
 		{ name = "buffer" },
+		{ name = "crates" }
 	}),
 })
 
